@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<style>
+    html {
+        background-color: #282755;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Trebuchet MS';
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        background: white;
+        font-size: 20px;
+        margin: 10px;
+        border-radius: 50px;
+        border: 5px solid black;
+    }
+
+    #buttonparent {
+        text-align: center;
+    }
+
+    .buttonmal {
+        background-color: lightgreen;
+        border: 5px solid black;
+        color: black;
+        width: 250px;
+        height: 125px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttonraddning {
+        background-color: lightgoldenrodyellow;
+        border: 5px solid black;
+        color: black;
+        width: 250px;
+        height: 125px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttonstraff {
+        background-color: lightsteelblue;
+        border: 5px solid black;
+        color: black;
+        width: 250px;
+        height: 125px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttontimeout {
+        background-color: lightseagreen;
+        border: 5px solid black;
+        color: black;
+        width: 250px;
+        height: 125px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttonutvisning {
+        background-color: lightpink;
+        border: 5px solid black;
+        color: black;
+        width: 250px;
+        height: 125px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttonstop {
+        background-color: red;
+        border: 5px solid black;
+        color: black;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        font-size: 20px;
+        transition-duration: 0.1s;
+        margin: 3px;
+        border-radius: 20px;
+    }
+
+    .buttonmal:hover {
+        background-color: green;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonraddning:hover {
+        background-color: goldenrod;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonstraff:hover {
+        background-color: steelblue;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttontimeout:hover {
+        background-color: seagreen;
+
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonutvisning:hover {
+        background-color: hotpink;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .buttonstop:hover {
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>
+        MHK Soundboard
+    </title>
+
+    <!-- Header-->
+    <div class="header">
+        <img src="bilder/mhk.png" class="center" onclick="specialarefunc()"></img>
+        <h1>Mönsterås Handbollsklubb Soundboard</h1>
+    </div>
+
+</head>
+
+<body>
+
+    <br><br>
+    <div id="buttonparent">
+
+        <button type="button" class="buttonmal" onclick="mal1func()">Mål<br>82nd</button>
+        <button type="button" class="buttonmal" onclick="mal2func()" >Mål<br>Canelloi</button>
+        <button type="button" class="buttonmal" onclick="mal3func()">Mål<br>Dream on the Dance</button>
+        <button type="button" class="buttonmal" onclick="mal4func()">Mål<br>Everytime</button>
+        <button type="button" class="buttonmal" onclick="mal5func()">Mål<br>Genom eld och vatten</button>
+        <button type="button" class="buttonmal" onclick="mal6func()">Mål<br>Giv mig</button>
+        <button type="button" class="buttonmal" onclick="mal7func()">Mål<br>Hey B</button>
+        <button type="button" class="buttonmal" onclick="mal8func()">Mål<br>Highway to Hell</button>
+        <button type="button" class="buttonmal" onclick="mal9func()">Mål<br>Ladioo</button>
+        <button type="button" class="buttonmal" onclick="mal10func()">Mål<br>Levels</button>
+        <button type="button" class="buttonmal" onclick="mal11func()">Mål<br>Nu kommer aldrig</button>
+        <button type="button" class="buttonmal" onclick="mal12func()">Mål<br>Oslagbara</button>
+        <button type="button" class="buttonmal" onclick="mal13func()">Mål<br>Sammy Forever Young</button>
+        <button type="button" class="buttonmal" onclick="mal14func()">Mål<br>Spectre</button>
+        <button type="button" class="buttonmal" onclick="mal15func()">Mål<br>Stamp</button>
+        <button type="button" class="buttonmal" onclick="mal16func()">Mål<br>The Nights</button>
+        <button type="button" class="buttonmal" onclick="mal17func()">Mål<br>Thunder</button>
+        <button type="button" class="buttonmal" onclick="mal18func()">Mål<br>TNT</button>
+        <button type="button" class="buttonmal" onclick="mal19func()">Mål<br>Tomorrow Never</button>
+        <button type="button" class="buttonmal" onclick="mal20func()">Mål<br>Wake me up</button>
+        <br>
+        <button type="button" class="buttonraddning" onclick="raddningfunc()">Räddning<br>Another one</button>
+        <button type="button" class="buttonstraff" onclick="straff1func()">Straff<br>For a few</button>
+        <button type="button" class="buttonstraff" onclick="straff2func()">Straff<br>The Good The Bad</button>
+        <button type="button" class="buttontimeout" onclick="timeoutfunc()">Timeout<br>Då som nu</button>
+        <button type="button" class="buttonutvisning" onclick="utvisningfunc()">Utvisning<br>Emil</button>
+
+    </div>
+
+    <button type="button" class="buttonstop" onclick="stopfunc()">STOP<br>Stoppa all musik</button>
+
+    <script>
+
+        var mal1 = new Audio("sounds/mal_82nd.mp3");
+        var mal2 = new Audio("sounds/mal_canelloi.mp3");
+        var mal3 = new Audio("sounds/mal_Dream_on_the_dance.mp3");
+        var mal4 = new Audio("sounds/mal_everytime.mp3");
+        var mal5 = new Audio("sounds/mal_Genom_eld_och_vatten.mp3");
+        var mal6 = new Audio("sounds/mal_giv_mig.mp3");
+        var mal7 = new Audio("sounds/mal_Hey_B.mp3");
+        var mal8 = new Audio("sounds/mal_highway_to_hell.mp3");
+        var mal9 = new Audio("sounds/mal_Ladioo.mp3");
+        var mal10 = new Audio("sounds/mal_levels.mp3");
+        var mal11 = new Audio("sounds/mal_nu_kommer_aldrig.mp3");
+        var mal12 = new Audio("sounds/mal_oslagbara.mp3");
+        var mal13 = new Audio("sounds/mal_Sammy_forever_young.mp3");
+        var mal14 = new Audio("sounds/mal_Spectre.mp3");
+        var mal15 = new Audio("sounds/mal_Stamp.mp3");
+        var mal16 = new Audio("sounds/mal_The_Nights.mp3");
+        var mal17 = new Audio("sounds/mal_thunder.mp3");
+        var mal18 = new Audio("sounds/mal_TNT.mp3");
+        var mal19 = new Audio("sounds/mal_tomorrow_never.mp3");
+        var mal20 = new Audio("sounds/mal_Wake_me_up.mp3");
+        var raddning = new Audio("sounds/raddning_another_one_bites.mp3");
+        var straff1 = new Audio("sounds/straff_For_a_few.mp3");
+        var straff2 = new Audio("sounds/straff_The_good_The_bad.mp3");
+        var timeout = new Audio("sounds/time_out_da_som_nu.mp3");
+        var utvisning = new Audio("sounds/utvisning_emil.mp3");
+        var specialare = new Audio("sounds/specialare.mp3");
+
+        mal1.currentTime = 0;
+        mal2.currentTime = 0;
+        mal3.currentTime = 0;
+        mal4.currentTime = 0;
+        mal5.currentTime = 0;
+        mal6.currentTime = 0;
+        mal7.currentTime = 0;
+        mal8.currentTime = 0;
+        mal9.currentTime = 0;
+        mal10.currentTime = 0;
+        mal11.currentTime = 0;
+        mal12.currentTime = 0;
+        mal13.currentTime = 0;
+        mal14.currentTime = 0;
+        mal15.currentTime = 0;
+        mal16.currentTime = 0;
+        mal17.currentTime = 0;
+        mal18.currentTime = 0;
+        mal19.currentTime = 0;
+        mal20.currentTime = 0;
+        raddning.currentTime = 0;
+        straff1.currentTime = 0;
+        straff2.currentTime = 0;
+        timeout.currentTime = 0;
+        utvisning.currentTime = 0;
+        specialare.currentTime = 0;
+
+
+        function mal1func() {
+            mal1.play();
+        }
+        function mal2func() {
+            mal2.play();
+        }
+        function mal3func() {
+            mal3.play();
+        }
+        function mal4func() {
+            mal4.play();
+        }
+        function mal5func() {
+            mal5.play();
+        }
+        function mal6func() {
+            mal6.play();
+        }
+        function mal7func() {
+            mal7.play();
+        }
+        function mal8func() {
+            mal8.play();
+        }
+        function mal9func() {
+            mal9.play();
+        }
+        function mal10func() {
+            mal10.play();
+        }
+        function mal11func() {
+            mal11.play();
+        }
+        function mal12func() {
+            mal12.play();
+        }
+        function mal13func() {
+            mal13.play();
+        }
+        function mal14func() {
+            mal14.play();
+        }
+        function mal15func() {
+            mal15.play();
+        }
+        function mal16func() {
+            mal16.play();
+        }
+        function mal17func() {
+            mal17.play();
+        }
+        function mal18func() {
+            mal18.play();
+        }
+        function mal19func() {
+            mal19.play();
+        }
+        function mal20func() {
+            mal20.play();
+        }
+        function raddningfunc() {
+            raddning.play();
+        }
+        function straff1func() {
+            straff1.play();
+        }
+        function straff2func() {
+            straff2.play();
+        }
+        function timeoutfunc() {
+            timeout.play();
+        }
+        function utvisningfunc() {
+            utvisning.play();
+        }
+        function specialarefunc(){
+            specialare.play();
+        }
+
+
+
+
+        function stopfunc() {
+
+            mal1.pause();
+            mal2.pause();
+            mal3.pause();
+            mal4.pause();
+            mal5.pause();
+            mal6.pause();
+            mal7.pause();
+            mal8.pause();
+            mal9.pause();
+            mal10.pause();
+            mal11.pause();
+            mal12.pause();
+            mal13.pause();
+            mal14.pause();
+            mal15.pause();
+            mal16.pause();
+            mal17.pause();
+            mal18.pause();
+            mal19.pause();
+            mal20.pause();
+            raddning.pause();
+            straff1.pause();
+            straff2.pause();
+            timeout.pause();
+            utvisning.pause();
+            specialare.pause();
+
+            mal1.currentTime = 0;
+            mal2.currentTime = 0;
+            mal3.currentTime = 0;
+            mal4.currentTime = 0;
+            mal5.currentTime = 0;
+            mal6.currentTime = 0;
+            mal7.currentTime = 0;
+            mal8.currentTime = 0;
+            mal9.currentTime = 0;
+            mal10.currentTime = 0;
+            mal11.currentTime = 0;
+            mal12.currentTime = 0;
+            mal13.currentTime = 0;
+            mal14.currentTime = 0;
+            mal15.currentTime = 0;
+            mal16.currentTime = 0;
+            mal17.currentTime = 0;
+            mal18.currentTime = 0;
+            mal19.currentTime = 0;
+            mal20.currentTime = 0;
+            raddning.currentTime = 0;
+            straff1.currentTime = 0;
+            straff2.currentTime = 0;
+            timeout.currentTime = 0;
+            utvisning.currentTime = 0;
+            specialare.currentTime = 0;
+
+        }
+    </script>
+
+</body>
+
+</html>
